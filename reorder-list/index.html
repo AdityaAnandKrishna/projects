@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/infusion/2.0.0/infusion-all.js"></script>
+    <title>Reorder List</title>
+</head>
+<body>
+    <section>
+        <h1>Table Row Reordering</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Job</th>
+                    <th>Speciality</th>
+                    <th>Pay scale</th>
+                </tr>
+            </thead>
+            <tbody id="fluid-id-5wzy7th1-57" role="list" aria-multiselectable="false" aria-readonly="false" aria-disabled="false" tabindex="0">
+                <tr id="fluid-id-5wzy7th1" aria-label=" to 1" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
+                   
+                    <td>Ronny</td>
+                    <td>25</td>
+                    <td>Private</td>    
+                    <td>Doctor</td>
+                    <td>grade 1</td>
+                </tr>
+                <tr id="fluid-id-5wzy7th1-76" aria-label=" to 2" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
+                    
+                    <td>Nita</td>
+                    <td>25</td>
+                    <td>Govt</td>    
+                    <td>Engineering</td>
+                    <td>grade 3</td>
+                </tr>
+                <tr id="fluid-id-5wzy7th1-77" aria-label=" to 3" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
+                   
+                    <td>Vicky</td>
+                    <td>29</td>
+                    <td>Private</td>    
+                    <td>Stunt man</td>
+                    <td>grade 2</td>
+                </tr>
+                <tr id="fluid-id-5wzy7th1-78" aria-label=" to 4" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
+                 
+                    <td>Sam</td>
+                    <td>28</td>
+                    <td>Govt</td>    
+                    <td>Dentist</td>
+                    <td>grade 1</td>
+                </tr>
+                <tr id="fluid-id-5wzy7th1-79" aria-label=" to 5" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
+               
+                    <td>Rock</td>
+                    <td>21</td>
+                    <td>Govt</td>    
+                    <td>Carpenter</td>
+                    <td>grade 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script type="text/javascript">
+        fluid.reorderList("tbody", {
+            selectors: {
+                movables: "tr"
+            },
+            components: {
+                labeller: {
+                    options: {
+                        strings: {
+                            overallTemplate: "%recentStatus to %position",
+                            position:        "%index",
+                            recentStatus:    "moved from row %position"
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+
+</body>
+</html>

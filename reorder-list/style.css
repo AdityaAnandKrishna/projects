@@ -1,0 +1,25 @@
+section {
+    margin: 2rem;
+}
+
+th{
+    margin: 1em;
+    padding:1em 4em;
+    background: yellowgreen;
+}
+td{
+    padding:1em 4em;
+}
+.fl-reorderer-movable-default,
+.fl-reorderer-movable-selected{
+    
+    background: #eef;
+}
+.fl-reorderer-movable-default:hover,
+.fl-reorderer-movable-selected {
+    cursor: move;
+    background: #ddd;
+}
+.fl-reorderer-avatar {
+    opacity: 0.75;
+}
