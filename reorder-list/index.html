@@ -22,8 +22,8 @@
                     <th>Pay scale</th>
                 </tr>
             </thead>
-            <tbody id="fluid-id-5wzy7th1-57" role="list" aria-multiselectable="false" aria-readonly="false" aria-disabled="false" tabindex="0">
-                <tr id="fluid-id-5wzy7th1" aria-label=" to 1" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
+            <tbody role="list" aria-multiselectable="false" aria-readonly="false" aria-disabled="false" tabindex="0">
+                <tr aria-label=" to 1" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
                    
                     <td>Ronny</td>
                     <td>25</td>
@@ -31,15 +31,17 @@
                     <td>Doctor</td>
                     <td>grade 1</td>
                 </tr>
-                <tr id="fluid-id-5wzy7th1-76" aria-label=" to 2" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
+                <tr aria-label=" to 2" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
                     
-                    <td>Nita</td>
+                    <td class="edit1 flc-inlineEdit-indent">
+                        <span class="flc-inlineEdit-text flc-inlineEdit-title" style="margin:0;">click to edit</span>
+                    </td>
                     <td>25</td>
                     <td>Govt</td>    
                     <td>Engineering</td>
                     <td>grade 3</td>
                 </tr>
-                <tr id="fluid-id-5wzy7th1-77" aria-label=" to 3" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
+                <tr aria-label=" to 3" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
                    
                     <td>Vicky</td>
                     <td>29</td>
@@ -47,25 +49,33 @@
                     <td>Stunt man</td>
                     <td>grade 2</td>
                 </tr>
-                <tr id="fluid-id-5wzy7th1-78" aria-label=" to 4" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
+                <tr aria-label=" to 4" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
                  
-                    <td>Sam</td>
+                    <td class="edit2 flc-inlineEdit-indent">
+                        <p class="flc-inlineEdit-text flc-inlineEdit-title" style="margin:0;">click to edit</p>
+                    </td>
                     <td>28</td>
                     <td>Govt</td>    
                     <td>Dentist</td>
                     <td>grade 1</td>
                 </tr>
-                <tr id="fluid-id-5wzy7th1-79" aria-label=" to 5" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
+                <tr aria-label=" to 5" class="fl-reorderer-movable-default ui-draggable ui-draggable-handle" role="listitem" aria-selected="false" aria-disabled="false" tabindex="-1" aria-grabbed="false" aria-dropeffect="none">
                
-                    <td>Rock</td>
+                    <td class="edit3 flc-inlineEdit-indent">
+                        <p class="flc-inlineEdit-text flc-inlineEdit-title" style="margin:0;">click to edit</p>
+                    </td>
                     <td>21</td>
                     <td>Govt</td>    
                     <td>Carpenter</td>
-                    <td>grade 3</td>
+                    <td class="edit4 flc-inlineEdit-indent">
+                        <p class="flc-inlineEdit-text flc-inlineEdit-title" style="margin:0;">click to edit</p>
+                    </td>
                 </tr>
             </tbody>
         </table>
     </section>
+
+    <p><strong style="padding:.3em 2em;font-size:1.5em;">- Edit the cells -</strong></p>
 
     <script type="text/javascript">
         fluid.reorderList("tbody", {
@@ -86,6 +96,30 @@
         });
     </script>
 
+    <script type="text/javascript">
+        fluid.inlineEdit(".edit1", {
+            styles: {
+                edit: ".flc-inlineEdit-title-edit .flc-inlineEdit-edit"
+                }      
+        });
+
+        fluid.inlineEdit(".edit2", {
+            styles: {
+                edit: ".flc-inlineEdit-title-edit .flc-inlineEdit-edit"
+                }      
+        });
+
+        fluid.inlineEdit(".edit3", {
+            styles: {
+                edit: ".flc-inlineEdit-title-edit .flc-inlineEdit-edit"
+                }      
+        });
+        fluid.inlineEdit(".edit4", {
+            styles: {
+                edit: ".flc-inlineEdit-title-edit .flc-inlineEdit-edit"
+                }      
+        });
+    </script>
 
 </body>
 </html>
