@@ -1,4 +1,4 @@
-# collection of projects
+# Collection of Projects
 ## 3 Different Apps
 
 ## Calculator 
